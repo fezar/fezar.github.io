@@ -69,7 +69,7 @@ jobs:
   deploy-vercel:
     needs: update-data
     runs-on: ubuntu-latest
-    if: ${{ vars.ENABLE_VERCEL_DEPLOYMENT == 'true' }}
+    if: ${{ vars.ENABLE_VERCEL_DEPLOYMENT == 'false' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
